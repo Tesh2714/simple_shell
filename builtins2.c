@@ -20,7 +20,6 @@ void add_key(vars_t *vars)
 		vars->status = 127;
 		new_exit(vars);
 	}
-	
 	for (i = 0; vars->env[i] != NULL; i++)
 		newenv[i] = vars->env[i];
 	newenv[i] = add_value(vars->av[1], vars->av[2]);
