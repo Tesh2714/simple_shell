@@ -30,10 +30,9 @@ char *_strdup(char *strtodup)
 	char *copy;
 
 	int len, i;
-	
+
 	if (strtodup == 0)
 		return (NULL);
-	
 	for (len = 0; strtodup[len]; len++)
 		;
 	copy = malloc((len + 1) * sizeof(char));
@@ -110,7 +109,7 @@ char *_strcat(char *strc1, char *strc2)
 unsigned int _strlen(char *str)
 {
 	unsigned int len;
-	
+
 	len = 0;
 	for (len = 0; str[len]; len++)
 		;
